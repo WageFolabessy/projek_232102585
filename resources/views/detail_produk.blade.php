@@ -13,11 +13,11 @@
             </thead>
             <tbody>
                 <tr>
-                    <th scope="row">1</th>
-                    <td>ROG GAMERS</td>
-                    <td>Asus</td>
-                    <td>Rp. 12.000.000</td>
-                    <td><img src="/produk.jpg" alt="" width="50" height="50"></td>
+                    <th scope="row">{{ $id }}</th>
+                    <td>{{ $produk['nama'] }}</td>
+                    <td>{{ $produk['merk'] }}</td>
+                    <td>{{ $produk['harga'] }}</td>
+                    <td><img src="{{ $produk['foto'] }}" alt="" width="50" height="50"></td>
                 </tr>
             </tbody>
         </table>

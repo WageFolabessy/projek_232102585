@@ -8,4 +8,4 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/produk', [ProdukController::class,'index'])->name('produk.index');
-Route::get('produk/detail_produk', [ProdukController::class,'detail_produk'])->name('produk.detail_produk');
+Route::get('produk/detail_produk/{id}', [ProdukController::class,'detail_produk'])->name('produk.detail_produk');
